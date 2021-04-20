@@ -28,7 +28,7 @@ func Hellos(names []string) (map[string]string, error){
 
 	// Loop through the received slice of names, calling
 	// the Hello function to get a message for each name.
-	for _, name := range names {
+	for _, name := range names {		
 		message, err := Hello(name)
 
 		if err != nil {
