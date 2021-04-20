@@ -13,9 +13,15 @@ func main(){
 	// the time, source file, and line number.
 	log.SetPrefix("greetings: ")
 	log.SetFlags(0)
+
+	names := []string{
+		"Eros",
+		"Mars",
+		"Venus",
+	}
 	
 	// get a greeting message and print it.
-	message, err := greetings.Hello("Eros")
+	message, err := greetings.Hellos(names)
 
 	// if an Error was returned, print it to the console and
 	// exit the program.
